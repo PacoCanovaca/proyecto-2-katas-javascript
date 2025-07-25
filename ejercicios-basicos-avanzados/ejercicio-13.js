@@ -21,7 +21,7 @@ function nameFinder(nameList, nameSearched) {
       namePosition = i;
     }
   }
-  if (nameCheck == true) {
+  if (nameCheck) {
     console.log(`True, Position ${namePosition}`);
   } else {
     console.log(`False`);
