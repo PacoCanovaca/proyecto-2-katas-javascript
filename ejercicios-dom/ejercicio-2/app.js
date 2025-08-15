@@ -10,8 +10,6 @@ document.body.appendChild(div);
 const div2 = document.createElement("div");
 const p = document.createElement("p");
 
-console.log(p)
-
 div2.insertAdjacentElement("afterbegin", p); // Uso insertAdjacentElement por cambiar un poco y no repetir todo el rato appendChild y probar otros métodos, aunque appendChild sería el más sencillo aquí
 
 document.body.appendChild(div2);
