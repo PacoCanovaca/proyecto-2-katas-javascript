@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+
+:root {
+  --color1: #111111;
+  --color2: #353535;
+  --color3: #f8f8f8;
+  --spacing: 20px;
+  --big-spacing: calc(2 * var(--spacing));
+  --small-spacing: calc(var(--spacing) / 2);
+  --font-size: 16px;
+  --main-font: Helvetica, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: var(--font-size);
+}
+
+header {
+  background-color: var(--color1);
+  padding: var(--spacing);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header > h1 {
+  font-family: "Permanent Marker", cursive;
+  font-size: 1.5rem;
+  color: var(--color3);
+}
+
+header > img {
+  height: var(--big-spacing);
+}
+
+main {
+  background-color: var(--color2);
+  padding: var(--spacing);
+  color: var(--color3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing);
+}
+
+main > h2 {
+  font-size: 1.3rem;
+}
+
+main > ul {
+  padding: var(--spacing);
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 90px);
+  gap: var(--spacing);
+  justify-content: space-around;
+}
+
+main > ul > li {
+  display: flex;
+  flex-direction: column;
+}
+
+main > ul > li > h3 {
+  font-size: 0.65rem;
+}
+
+main > ul > li > img {
+  height: 90px;
+}
+
+@media (min-width: 480px) {
+  header > h1 {
+    font-size: 1.8rem;
+  }
+
+  header > img {
+    height: 45px;
+  }
+
+  main > h2 {
+    font-size: 1.5rem;
+  }
+
+  main > ul {
+    grid-template-columns: repeat(3, 120px);
+    gap: var(--spacing);
+  }
+
+  main > ul > li > h3 {
+    font-size: 0.9rem;
+  }
+
+  main > ul > li > img {
+    height: 120px;
+  }
+}
+
+@media (min-width: 550px) {
+  header > h1 {
+    font-size: 2rem;
+  }
+
+  header > img {
+    height: 50px;
+  }
+
+  main > h2 {
+    font-size: 1.7rem;
+  }
+
+  main > ul {
+    grid-template-columns: repeat(3, 150px);
+    gap: var(--spacing);
+  }
+
+  main > ul > li > h3 {
+    font-size: 1rem;
+  }
+
+  main > ul > li > img {
+    height: 150px;
+  }
+}
+
+@media (min-width: 768px) {
+  header > h1 {
+    font-size: 3rem;
+  }
+
+  header > img {
+    height: 75px;
+  }
+
+  main > h2 {
+    font-size: 2.5rem;
+  }
+
+  main > ul {
+    grid-template-columns: repeat(3, 210px);
+    gap: var(--big-spacing);
+  }
+
+  main > ul > li > h3 {
+    font-size: 1.3rem;
+  }
+
+  main > ul > li > img {
+    height: 210px;
+  }
+}
+
+@media (min-width: 1025px) {
+  header > h1 {
+    font-size: 3.5rem;
+  }
+
+  header > img {
+    height: 90px;
+  }
+
+  main > h2 {
+    font-size: 3rem;
+  }
+
+  main > ul {
+    grid-template-columns: repeat(3, 240px);
+    gap: var(--big-spacing);
+  }
+
+  main > ul > li > h3 {
+    font-size: 1.5rem;
+  }
+
+  main > ul > li > img {
+    height: 250px;
+  }
+}
